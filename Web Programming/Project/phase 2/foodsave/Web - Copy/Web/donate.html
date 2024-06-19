@@ -1,0 +1,57 @@
+<!-- donate.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food - Food Save</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showDonationConfirmation() {
+            const pickupTime = document.getElementById('pickupTime').value;
+            if (pickupTime) {
+                alert("We are sending a truck to your location at the chosen date: " + pickupTime);
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Food Save</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Donate Food</h2>
+            <form action="donate.php" method="POST" onsubmit="showDonationConfirmation(); return false;">
+                <label for="foodType">Food Type:</label>
+                <input type="text" id="foodType" name="foodType" required><br>
+                <label for="quantity">Quantity:</label>
+                <input type="text" id="quantity" name="quantity" required><br>
+                <label for="pickupTime">Preferred Pickup Time:</label>
+                <input type="datetime-local" id="pickupTime" name="pickupTime" required><br>
+                <button type="submit" class="donate">Donate</button>
+            </form>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 Food Save. All rights reserved.</p>
+    </footer>
+</body>
+</html>

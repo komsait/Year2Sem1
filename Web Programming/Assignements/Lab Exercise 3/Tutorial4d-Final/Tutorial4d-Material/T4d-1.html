@@ -1,0 +1,60 @@
+/*
+JavaScript: Arrayss
+
+Subject: Web Programming
+Matric: A22EC4033
+Name: Khaled Osama Tahoon
+
+Tutorial_4d-1
+*/
+
+<html>
+<head>
+<title>Arrays</title>
+</head>
+<body>
+<table border="1" cellspacing="0">
+<tr align="center">
+<th>Product's Name</th>
+<th>Unit Price <br>(RM)</th>
+<th> Quantity</th>
+<th> Price <br> (RM)</th>
+</tr>
+<script language="Javascript">
+var products = new Array("Speaker", "Head phone", "Keyboard","Mouse");
+var prices= [7,15,12,30,10]; // Assuming price for Mouse (previously missing)
+var qty = [0, 0, 0, 0]; // Array to store quantity for each product
+var total_quantity = 0;
+var total_price = 0;
+
+for (var i=0; i<products.length; i++) {
+  // Prompt user for quantity
+  qty[i] = parseInt(prompt("Enter quantity for " + products[i] + ": "));
+
+  // Calculate price for each product
+  var price = qty[i] * prices[i];
+
+  total_quantity += qty[i];
+  total_price += price;
+
+  document.writeln("<tr align='right'>");
+  document.writeln("<td align='left'>", products[i], "</td>", "<td>", prices[i], "</td>" );
+  document.writeln("<td>", qty[i], "</td>");
+  document.writeln("<td>", price, "</td>");
+  document.writeln("</tr>");
+}
+
+// Display Total Quantity and Total Price
+document.writeln("<tr align='right'>");
+document.writeln("<th colspan='2' align='right'>Total </th>");
+document.writeln("<td>", total_quantity, "</td>");
+document.writeln("<td>", total_price, "</td>");
+document.writeln("</tr>");
+
+// Calculate and display Average Unit Price
+var average_unit_price = total_price / prices.length;
+document.writeln("<br>The average of Unit Price:<b><font color='red'>" + average_unit_price.toFixed(2) + "</font></b>");
+
+</script>
+</body>
+</html>

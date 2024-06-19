@@ -1,0 +1,99 @@
+<!--
+********************************************************
+* Tutorial 3c: CSS Selectors                           *
+* T3c-1.html                                           *
+*                                                      *
+* Date: 24/4/2024                                      *
+* Name: Khaled Osama Tahoon                            *
+********************************************************
+-->
+
+<html>
+   <head>
+      <title>CSS Selectors</title>
+
+      <style type = "text/css">
+          
+          p { color: red; 
+              text-decoration: underline }
+          
+          b { font-weight: normal}
+          
+          em, b { color: green; }
+          
+          p em { font-size: 200%; }
+          
+          #box_text { text-align: center;
+                      color: yellow;
+                      border: 2px solid red;
+                      background-color: blue; }
+          
+          font.upper_bold { font-weight: bold;
+                             text-transform: uppercase; }
+          
+          a { text-decoration: none; }
+          
+          a:hover {
+              font-weight: bold;
+              color: red;
+          }
+          
+          a:visited {
+              text-transform: lowercase;
+          }
+          
+          p a:visited {
+              text-decoration: line-through;
+              color: gray;
+          }
+        
+      </style>
+   </head>
+
+   <body>
+
+        <p> Question 1: All text formated by the P element become red in color </p>
+        <br>
+        <br>
+
+        <b> Question 2: Remove bold from the B element </b>
+        <br>
+        <br>
+
+        <em> Question 3: All text formated by the EM and B element</em>
+        <br>
+        <b> will be green in color</b>
+        <br>
+        <br>
+
+        <p>
+          <em> Question 4: All text formated by the EM inside P become two times bigger in size</em>
+        </p>
+         <em>This text is formatted by the EM element but it is outside of P</em>
+        <br>
+        <br>
+
+        Question 5: <div id="box_text">This text is formatted using the box_text identification style</div>
+        <br>
+        <br>
+
+
+        <font class="upper_bold"> Question 6: This text is formatted using the upper_bold class style in FONT element</font>
+        <br>
+        <em class="upper_bold">  The style does not affect this text because the EM is outside of FONT</em>
+        <br>
+        <br>
+
+         <a href="http://www.utm.my" target="_blank"> Question 7: The underlined of this hyperlink was removed.  Try to hover on it </a>
+         <br><br><br>
+         <a href="http://web.utm.my" target="_blank"> visited link</a>
+         <br>
+         <br>
+
+
+         <p>
+            <a href="https://comp.utm.my/" target="_blank"> Question 8: The style only affects the A element inside P.</a>
+		 </p>
+
+   </body>
+</html>

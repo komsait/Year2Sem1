@@ -1,0 +1,77 @@
+/*
+   Name:     Khaled Osama Tahoon
+   Matric:   A22EC4033
+   Activity: 5, Lab Exercise 4: JavaScript
+*/
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays</title>
+    <script language="Javascript">
+        function calculate() {
+            var products = ["Speaker", "Headphone", "Keyboard", "Mouse"];
+            var prices = [7, 15, 12, 30];
+            var quantities = [];
+            var total_price = 0;
+
+            // Get user input for quantities
+            for (var i = 0; i < products.length; i++) {
+                var quantity = parseInt(document.getElementById('quantity' + i).value);
+                quantities.push(quantity);
+            }
+
+            // Generate the table dynamically
+            var table = "<table border='1' cellspacing='0'><tr align='center'><th>Product's Name</th><th>Unit Price (RM)</th><th>Quantity</th><th>Price (RM)</th></tr>";
+            for (var i = 0; i < products.length; i++) {
+                total_price += quantities[i] * prices[i];
+                table += "<tr align='right'>"
+                    + "<td align='left'>" + products[i] + "</td>"
+                    + "<td>" + prices[i] + "</td>"
+                    + "<td>" + quantities[i] + "</td>"
+                    + "<td>" + (quantities[i] * prices[i]) + "</td>"
+                    + "</tr>";
+            }
+
+            var total_quantity = quantities.reduce((a, b) => a + b, 0);
+            table += "<tr align='right'>"
+                + "<th colspan='2' align='right'>Total</th>"
+                + "<td>" + total_quantity + "</td>"
+                + "<td>" + total_price + "</td>"
+                + "</tr></table>";
+
+            document.getElementById('result').innerHTML = table;
+
+            // Calculate and display the average price
+            var average_price = total_price / total_quantity;
+            document.getElementById('average').innerHTML = average_price.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter the quantities for the products</h2>
+    <form>
+        <label for="quantity0">Speaker Quantity:</label>
+        <input type="number" id="quantity0" step="1" required><br>
+        <label for="quantity1">Headphone Quantity:</label>
+        <input type="number" id="quantity1" step="1" required><br>
+        <label for="quantity2">Keyboard Quantity:</label>
+        <input type="number" id="quantity2" step="1" required><br>
+        <label for="quantity3">Mouse Quantity:</label>
+        <input type="number" id="quantity3" step="1" required><br>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <br />
+    <div id="result"></div>
+    <br />
+    The average of Unit Price: <b><font color="red" id="average"></font></b>
+</body>
+</html>
+
+
+
+
+
+

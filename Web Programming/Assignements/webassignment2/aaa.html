@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XcodeX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+      line-height: 1.6; /* Improved line spacing */
+    }
+
+    /* Header Styles */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #32012F;
+      color: #ffffff;
+    }
+
+    .brand img {
+      width: 80px; /* Adjust size as needed */
+      height: auto;
+    }
+
+    .nav ul {
+      list-style-type: none;
+    }
+
+    .nav ul li {
+      display: inline;
+    }
+
+    .nav ul li:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    /* Main Content Styles */
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 200px; /* Adjusted the order here */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .left-menu,
+    .content,
+    .projects,
+    .achievements {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .left-menu h2,
+    .content h2,
+    .projects h2,
+    .achievements h2 {
+      margin-bottom: 10px;
+      font-weight: bold; /* Bold headings */
+    }
+
+    .left-menu ul,
+    .content ul,
+    .projects ul,
+    .achievements ul {
+      list-style-type: none;
+    }
+
+    .left-menu ul li,
+    .content ul li,
+    .projects ul li,
+    .achievements ul li {
+      margin-bottom: 10px;
+      font-size: 16px; /* Adjust font size */
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #32012F;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin-bottom: 10px;
+    }
+
+    .social-links a {
+      color: #ffffff;
+      margin-right: 10px;
+    }
+
+    /* About Me Section */
+    .about-me {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .about-me img {
+      width: 200px; /* Adjust as needed */
+      height: auto;
+      border-radius: 8px; /* Rounded corners for images */
+    }
+
+    .about-me h3 {
+      font-size: 24px; 
+      font-weight: bold; 
+    }
+
+    .about-me p {
+      font-size: 18px; 
+      color: #444; /* Darker text color */
+    }
+
+    /* Hover Effect */
+    .t:hover {
+      color: #F97300;
+    }
+
+    /* Custom Styles for Brand */
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand h1 {
+      font-size: 36px;
+    }
+
+    .brand .t {
+      color: #524C42;
+    }
+
+    .brand .red {
+      color: #F97300;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        background-color: #f0f0f0;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <!--<img src="X_official_logo.jpg" alt="XcodeX Logo" /> -->
+      <h1 class="t">X</h1>
+      <h1 class="red">CODE</h1>
+      <h1 class="t">X</h1>
+    </div>
+    <!-- Navigation Menu -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Content Section -->
+    <section class="content">
+      <!-- Section Heading -->
+      <h2 class="t">About Me</h2>
+      <!-- Information about You -->
+      <div class="about-me">
+        <img src="FormalPic.jpeg" alt="Your Photo" />
+        <div>
+          <h3>Khaled Tahoon</h3>
+          <p>Being in the third semester of Software Engineering and having a keen interest in following the technology world and its trends, I am really enjoying my current technological journey. In software engineering, I hold a keen interest in software development and solving complex problems. Mastering programming languages, algorithms, and designing systems, I think, constantly propels me forward. In my journey of software engineering, I have developed a resolute mindset and the zeal for innovation. I am a firm believer in the fact that technology can change the world, and I strive to use my skills to make a meaningful contribution to its evolution.</p>
+          <br>
+          <br>
+          <!-- Goals -->
+          <h3>Goals</h3>
+          <h4>AI</h4>
+          <p>My goal is to delve deep into the field of artificial intelligence, exploring advanced topics such as machine learning, deep learning, and natural language processing. I aim to gain a comprehensive understanding of AI algorithms and methodologies, and to apply this knowledge to solve complex real-world problems.</p>
+          
+          <h4>Networking</h4>
+          <p>While my primary focus is on software development, I also recognize the importance of networking concepts in building robust and scalable systems. My goal is to acquire a foundational understanding of networking principles, including TCP/IP, DNS, and routing protocols, to enhance my ability to develop efficient and secure software applications.</p>
+          
+          <h4>Embedded Programming</h4>
+          <p>Embedded programming presents unique challenges and opportunities due to the constraints of embedded systems. My goal is to acquire a medium level of knowledge in embedded programming, focusing on languages like C and C++, as well as understanding hardware-software interactions and optimizing code for resource-constrained environments.</p>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- Left Menu -->
+    <aside class="left-menu">
+      <!-- Section Heading -->
+      <h2 class="t">Courses</h2>
+      <!-- List of Courses -->
+      <ul>
+        <h4>Previous Courses</h4>
+        <li>Programming Technique I</li>
+        <li>Programming Technique II</li>
+        <li>Computational Mathematics</li>
+        <li>Digital Logic</li>
+        <li>Computer Organization and Architecture</li>
+        <li>Network Communication</li>
+        <li>Database</li>
+        <li>System Analysis and Design</li>
+        <li>Technology and Information System</li>
+    
+        <h4>Current Courses</h4>
+        <li>Object Oriented Programming</li>
+        <li>Requirements Engineering and Software Modelling</li>
+        <li>Software Engineering</li>
+        <li>Web Programming</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+ <!-- Projects Section -->
+ <section class="projects">
+  <!-- Section Heading -->
+  <h2 class="t">Projects</h2>
+  <!-- List of Projects -->
+  <ul>
+    <li>Project PTI: Car Loan Calculator.</li>
+    <li>Project PTII: Habit Tracker.</li>
+    <!-- Add more projects here -->
+  </ul>
+</section>
+
+<!-- Achievements Section -->
+<section class="achievements">
+  <!-- Section Heading -->
+  <h2 class="t">Achievements</h2>
+  <!-- List of Achievements -->
+  <ul>
+    <li>Personal Achievement 1: Karate Tournments.</li>
+    <li>Personal Achievement 2: Self-Learned Programming.</li>
+  </ul>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<!-- Copyright Notice -->
+<p>&copy; 2024 XcodeX. All rights reserved.</p>
+<!-- Social Links -->
+<nav class="social-links">
+  <a href="https://github.com/komsait">GitHub</a>
+  <a href="https://www.instagram.com/khaledtahoonn">Instagram</a>
+  <a href="mailto:komsait2005@gmail.com">Email</a>
+
+</nav>
+</footer>

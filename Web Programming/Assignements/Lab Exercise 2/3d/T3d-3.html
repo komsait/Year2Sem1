@@ -1,0 +1,94 @@
+<!--
+********************************************************
+* Tutorial 3d - CSS Properties (Part 2)                *
+* T3d-3.html                                           *
+*                                                      *
+* Date: 24/4/2024                                      *
+* Name: Khaled Osama Tahoon                            *
+********************************************************
+-->
+
+
+<html>
+   <head>
+      <title>CSS Properties - Part 2</title>
+
+      <style type="text/css">
+         * {
+            font-family: verdana;
+            font-size: 10pt;
+         }
+
+         table,
+         tr,
+         td {
+            margin: 0px;
+            padding: 0px;
+            border: none;
+         }
+
+         tr {
+            height: 25px;
+            text-align: center;
+            vertical-align: middle;
+         }
+
+         td {
+            width: 100px;
+         }
+
+         .boldtext {
+            font-weight: bold;
+         }
+
+         .italictext {
+            font-style: italic;
+         }
+
+         .highlight {
+            background: lightgrey;
+         }
+
+         .dashed-border {
+            border-left: 1px dashed grey;
+         }
+      </style>
+
+   </head>
+
+   <body style="position:absolute; left:400px; top:200px;">
+
+      <table cellspacing="0" cellpadding="0">
+         <tr class="italictext boldtext highlight">
+            <td>x</td>
+            <td>y</td>
+            <td class="dashed-border">x+y</td>
+         </tr>
+
+         <tr>
+            <td>1</td>
+            <td>5</td>
+            <td class="dashed-border">6</td>
+         </tr>
+
+         <tr class="highlight">
+            <td>2</td>
+            <td>6</td>
+            <td class="dashed-border">8</td>
+         </tr>
+
+         <tr>
+            <td>3</td>
+            <td>7</td>
+            <td class="dashed-border">10</td>
+         </tr>
+
+         <tr class="highlight">
+            <td>4</td>
+            <td>8</td>
+            <td class="dashed-border">12</td>
+         </tr>
+      </table>
+
+   </body>
+</html>
